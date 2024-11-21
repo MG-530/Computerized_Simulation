@@ -1,4 +1,4 @@
-# 🖥️ Computerized_Simulation Project
+# 🖥️ Computerized Simulation Project
 
 ## 🌟 Repository Structure
 
