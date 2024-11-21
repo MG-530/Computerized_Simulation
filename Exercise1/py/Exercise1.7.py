@@ -1,0 +1,27 @@
+import numpy as np
+import matplotlib.pyplot as plt
+np.random.seed(0)
+x = np.random.uniform(0, 20, 200)
+y = np.random.uniform(2, 18, 200)
+z_a = x * y
+range_a = np.ptp(z_a)
+mean_a = np.mean(z_a)
+plt.figure()
+plt.hist(z_a, bins=20, alpha=0.7, color='skyblue', edgecolor='black')
+plt.title(f'Frequency Histogram of Z = X * Y\nRange: {range_a:.2f}, Mean: {mean_a:.2f}')
+plt.xlabel('Value of Z')
+plt.ylabel('Frequency')
+plt.grid(axis='y', alpha=0.75)
+plt.savefig('Z_multiply_histogram.png', format='png', dpi=300)
+plt.show()
+z_b = x / y
+range_b = np.ptp(z_b)
+mean_b = np.mean(z_b)
+plt.figure()
+plt.hist(z_b, bins=20, alpha=0.7, color='skyblue', edgecolor='black')
+plt.title(f'Frequency Histogram of Z = X / Y\nRange: {range_b:.2f}, Mean: {mean_b:.2f}')
+plt.xlabel('Value of Z')
+plt.ylabel('Frequency')
+plt.grid(axis='y', alpha=0.75)
+plt.savefig('Z_divide_histogram.png', format='png', dpi=300)
+plt.show()
