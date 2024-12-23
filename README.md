@@ -18,6 +18,11 @@ Computerized_Simulation/
 │   ├── Exercise2.pdf
 │   ├── Py/
 │   └── Screenshots/
+├── Exercise3/
+│   ├── Ex3.pdf
+│   ├── Exercise3.pdf
+│   ├── Py/
+│   └── Screenshots/
 │
 ```
 
@@ -38,4 +43,4 @@ Computerized_Simulation/
 - 📑 Microsoft Excel (optional)
 
 
-**Last Updated:** November 2024
+**Last Updated:** December 2024
