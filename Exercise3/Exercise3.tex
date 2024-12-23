@@ -68,39 +68,59 @@ Generate random numbers for a triangular distribution defined on $[a, b]$ with m
 \section{Exercise 5}
 Implement a random number generator for the Rayleigh distribution with variance $\sigma^2$.
 
+\\ The Rayleigh distribution is a continuous probability distribution commonly used in signal processing, radar systems, and various statistical applications.
+\[
+PDF: f(x; \sigma) = \frac{x}{\sigma^2} e^{-\frac{x^2}{2\sigma^2}}, \quad x \geq 0,
+\]
+\[
+CDF: F(x; \sigma) = 1 - e^{-\frac{x^2}{2\sigma^2}}, \quad x \geq 0.
+\]
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{./Screenshots/4.py.png} 
+\end{figure} \\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./Screenshots/4.png} 
+\end{figure} 
+\newpage
 \section{Exercise 6}
-Imagine a bank with multiple counters where customers arrive randomly. The arrival times of customers are independent and can be modeled using an exponential distribution. Similarly, the time taken to service a customer at a counter (service time) is also random and follows an exponential distribution.
-
-\textbf{Tasks:}
+Simulate a bank with multiple counters where:
 \begin{itemize}
-    \item Simulate customer arrivals and service times over a period.
-    \item Analyze key metrics such as:
-    \begin{itemize}
-        \item Average waiting time,
-        \item Counter utilization (how busy they are),
-        \item Total time customers spend in the system.
-    \end{itemize}
+    \item Customer arrival times follow an exponential distribution.
+    \item Service times at counters also follow an exponential distribution.
 \end{itemize}
-
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./Screenshots/6.py.png}
+\end{figure}
+The simulation was conducted using the following input parameters:
+\begin{itemize}
+    \item Number of Counters: 3
+    \item Arrival Rate (\(\lambda_a\)): 2 customers per unit time
+    \item Service Rate (\(\lambda_s\)): 3 customers per unit time
+    \item Simulation Time: 5000 time units
+\end{itemize}
+Based on the input parameters, the simulation produced the following results:
+\begin{itemize}
+    \item Average Waiting Time: 0.14 time units.
+    \item Counter Usage: 40.03\% ,  19.41\% ,6.67\% 
+    \item Average Time in System: 0.34 time units.
+\end{itemize}
+\newpage
 \section{Exercise 7}
-A logistics company operates a fleet of drones to deliver packages. Each package has a random destination within a defined area, and each drone has constraints like maximum payload and battery range. Packages arrive randomly over time, and drones are dispatched accordingly.
 
-\textbf{Inputs:}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./Screenshots/7.py.png} 
+\end{figure} \\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./Screenshots/7.png} 
+\end{figure} 
 \begin{itemize}
-    \item Delivery area: A 2D space (e.g., a grid of $10 \times 10$ km).
-    \item Drone characteristics: Speed, maximum payload, and battery range.
-    \item Package data: Randomly generated delivery locations, weights, and arrival times.
+    \item Average Delivery Time: 11.06 hours
+    \item Total Distance Traveled by All Drones: 41.04 km 
 \end{itemize}
-
-\textbf{Tasks:}
-\begin{enumerate}
-    \item Generate random package data.
-    \item Develop drone dispatch logic.
-    \item Simulate drone movements.
-    \item Analyze metrics such as:
-    \begin{itemize}
-        \item Average delivery time,
-        \item Total distance traveled by all drones.
-    \end{itemize}
 \end{enumerate}
 \end{document}
