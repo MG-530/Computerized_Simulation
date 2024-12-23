@@ -10,14 +10,15 @@ Computerized_Simulation/
 │   ├── Ex1.pdf        # Problem statement
 │   ├── Exercise1.pdf  # Detailed solution
 │   ├── Py/            # Python implementation (optional)
-│   └── Xlsx/          # Excel models (optional)
-|   └── Screenshots       
+│   ├── Xlsx/          # Excel models (optional)
+│   └── Screenshots       
 │
 ├── Exercise2/
 │   ├── Ex2.pdf
 │   ├── Exercise2.pdf
 │   ├── Py/
 │   └── Screenshots/
+│
 ├── Exercise3/
 │   ├── Ex3.pdf
 │   ├── Exercise3.pdf
